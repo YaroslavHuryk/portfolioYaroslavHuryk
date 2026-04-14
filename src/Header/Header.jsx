@@ -23,7 +23,7 @@ function Header() {
       {/* <NavbarIconMobile onClick={()=>{setMobileMenuOpen(!isMobileMenuOpen)}} isOpen={isMobileMenuOpen} /> */}
       {/* <Logo imgUrl="/public/logo1.png" /> */}
       <NavbarIconMobile onClick={()=>{setMobileMenuOpen(!isMobileMenuOpen)}} isOpen={isMobileMenuOpen} />
-      <Logo imgUrl="/logo1.png" />
+      <Logo imgUrl="/logo1.PNG" />
       <NavbarDesctop isOpen={isMobileMenuOpen} setOpen={setMobileMenuOpen} />
       <OrangeBtn text="Hire me" url="#" imageUrl="#" />
     </header>

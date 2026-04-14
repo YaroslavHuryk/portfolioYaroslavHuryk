@@ -5,7 +5,7 @@ import ListOfContacts from "./ListOfContacts";
 function Footer(){
     return (
         <div className="w-full h-fit text-white text-opacity-60 flex flex-col items-center justify-between bg-white bg-opacity-5 pb-6 pt-10">
-            <Logo imgUrl="/public/logo1.png" />
+            <Logo imgUrl="/logo1.png" />
             <ListNavDesctop />
             <div className="w-3/4 lg:w-2/4 p-2 self-center flex justify-center">
                 <ListOfContacts />

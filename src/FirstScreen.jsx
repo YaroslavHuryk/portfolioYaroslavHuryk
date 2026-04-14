@@ -17,7 +17,7 @@ function FirstScreen() {
           </div>
           <ReviewsContainer />
       </div>
-      <img  className="hidden md:block md:h-auto md:w-2/4 rounded-full mb-8 md:mb-0" src="/public/portret.jpg" alt="My photo" />
+      <img  className="hidden md:block md:h-auto md:w-2/4 rounded-full mb-8 md:mb-0" src="/portret.jpg" alt="My photo" />
     </div>
   );
 }

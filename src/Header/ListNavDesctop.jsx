@@ -10,16 +10,16 @@ function ListNavDesctop({ isOpen, setOpen }) {
   return (
     <ul className={`lg:flex lg:flex-row flex flex-col items-center justify-around lg:gap-6 lg:justify-center text-2xl lg:max-h-6 w-full h-full font-medium md:gap-14 text-white text-opacity-60 lg:h-fit lg:w-fit gap-8`}>
       <li className='inline-block'>
-        <Link to="/" onClick={() => isDesctop ? null : setOpen(false)}>Home</Link>
+        <Link to="/" onClick={() => isDesctop ? null : setOpen(false)} className='hover:text-orange-500 hover:underline'>Home</Link>
       </li>
       <li className='inline-block'>
-        <Link to="/portfolio" onClick={() => isDesctop ? null : setOpen(false)}>Portfolio</Link>
+        <Link to="/portfolio" onClick={() => isDesctop ? null : setOpen(false)} className='hover:text-orange-500 hover:underline'>Portfolio</Link>
       </li>
       <li className='inline-block'>
-        <Link to="/contact" onClick={() => isDesctop ? null : setOpen(false)}>Contact</Link>
+        <Link to="/contact" onClick={() => isDesctop ? null : setOpen(false)} className='hover:text-orange-500 hover:underline'>Contact</Link>
       </li>
       <li className='inline-block'>
-        <Link to="/blog" onClick={() => isDesctop ? null : setOpen(false)}>Blog</Link>
+        <Link to="/blog" onClick={() => isDesctop ? null : setOpen(false)} className='hover:text-orange-500 hover:underline'>Blog</Link>
       </li>
     </ul>
   )

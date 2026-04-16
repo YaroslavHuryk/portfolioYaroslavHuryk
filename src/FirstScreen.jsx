@@ -12,7 +12,7 @@ function FirstScreen() {
         <h1 className="font-black text-5xl md:text-7xl bg-gradient-to-tr from-orange-700 via-orange-500 to-orange-700 bg-clip-text text-transparent">Web-developer</h1>
           <ListOfContacts />
           <div className="flex justify-between mt-4 w-4/5 md:w-3/4 ml-auto mr-auto md:mr-0 md:ml-0">
-            <OrangeBtn text="Hire me" url="#" imageUrl="#" />
+            <OrangeBtn text="Hire me" url="/contact" imageUrl="#" />
             <GrayButton text="Download CV" onClick={() => alert('CV Downloaded')} />
           </div>
           <ReviewsContainer />

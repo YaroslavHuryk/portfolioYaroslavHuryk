@@ -1,4 +1,4 @@
-import { handleCVDownload} from '../src/services/cvService';
+import { handleCVDownload} from './services/cvService';
 
 function GrayButton({ text, onClick }) {
 

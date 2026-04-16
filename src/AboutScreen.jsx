@@ -1,7 +1,7 @@
 import OrangeBtn from './OrangeBtn';
 import Skills from './Skills';
 import React from 'react';
-import { handleCVDownload} from '../src/services/cvService';
+import { handleCVDownload} from './services/cvService';
 
 function AboutScreen() {
   return (

@@ -1,6 +1,6 @@
 import ProjectCard from "./ProjectCard";
 import { useEffect, useState } from "react";
-import VITE_API_URL from 'import.meta.env.NEXT_PUBLIC_API_URL';
+import VITE_API_URL from 'import.meta.env.VITE_API_URL';
 
 function Portfolio(){
     const [projects, setProjects] = useState([]);

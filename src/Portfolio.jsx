@@ -1,5 +1,7 @@
 import ProjectCard from "./ProjectCard";
 import { useEffect, useState } from "react";
+import NEXT_PUBLIC_API_URL from 'process.env.NEXT_PUBLIC_API_URL';
+
 function Portfolio(){
     const [projects, setProjects] = useState([]);
 
@@ -7,7 +9,7 @@ function Portfolio(){
         const queryParams = new URLSearchParams({
         type: "project"
         }).toString();
-        fetch(`http://localhost:3001/api/announcements?${queryParams}`)
+        fetch(`${NEXT_PUBLIC_API_URL}/api/announcements?${queryParams}`)
         .then(response => response.json())
         .then(data => {
             setProjects(data);

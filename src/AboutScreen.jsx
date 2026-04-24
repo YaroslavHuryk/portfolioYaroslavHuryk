@@ -20,8 +20,9 @@ function AboutScreen() {
             <br/>
             <br />
             ⚡️ Core Tech Stack:
-            • Frontend: JavaScript (ES6+), React.js, Next.js, HTML5, CSS3, Tailwind CSS
-            • Backend & DB: Node.js, MongoDB
+            <br/>
+            • Frontend: JavaScript (ES6+), React.js, Next.js, HTML5, CSS3, Tailwind CSS<br/>
+            • Backend & DB: Node.js, MongoDB<br/>
             • Tools & Practices: Git, GitHub, RESTful APIs, Responsive Design
             <br/>
             <br />

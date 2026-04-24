@@ -1,3 +1,4 @@
+import NEXT_PUBLIC_API_URL from 'process.env.NEXT_PUBLIC_API_URL';
 function Contact() {
     const handleSubmit = async (e) => { // 1. Змінили назву на 'e' (event)
         e.preventDefault(); // 2. Викликаємо preventDefault у об'єкта події
@@ -11,7 +12,7 @@ function Contact() {
         const dataToSend = { name, email, message };
 
         try {
-            const response = await fetch('http://localhost:3001/api/contact', {
+            const response = await fetch(`${NEXT_PUBLIC_API_URL}/api/contact`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

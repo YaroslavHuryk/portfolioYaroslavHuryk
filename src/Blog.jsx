@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'; 
 import Post from './Post';
-import NEXT_PUBLIC_API_URL from 'process.env.NEXT_PUBLIC_API_URL';
+import VITE_API_URL from 'import.meta.env.NEXT_PUBLIC_API_URL';
 
 function Blog() {
     const [posts, setPosts] = React.useState([]);
@@ -9,7 +9,7 @@ function Blog() {
         const queryParams = new URLSearchParams({
         type: "post"
         }).toString();
-        fetch(`${NEXT_PUBLIC_API_URL}/api/announcements?${queryParams}`)
+        fetch(`${VITE_API_URL}/api/announcements?${queryParams}`)
         .then(response => response.json())
         .then(data => {
             setPosts(data);

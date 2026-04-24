@@ -1,4 +1,4 @@
-import NEXT_PUBLIC_API_URL from 'process.env.NEXT_PUBLIC_API_URL';
+import VITE_API_URL from 'import.meta.env.NEXT_PUBLIC_API_URL';
 function Contact() {
     const handleSubmit = async (e) => { // 1. Змінили назву на 'e' (event)
         e.preventDefault(); // 2. Викликаємо preventDefault у об'єкта події
@@ -12,7 +12,7 @@ function Contact() {
         const dataToSend = { name, email, message };
 
         try {
-            const response = await fetch(`${NEXT_PUBLIC_API_URL}/api/contact`, {
+            const response = await fetch(`${VITE_API_URL}/api/contact`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

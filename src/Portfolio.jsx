@@ -1,9 +1,10 @@
 import ProjectCard from "./ProjectCard";
 import { useEffect, useState } from "react";
-import VITE_API_URL from 'import.meta.env.VITE_API_URL';
 
 function Portfolio(){
+    const VITE_API_URL = import.meta.env.VITE_API_URL;
     const [projects, setProjects] = useState([]);
+
 
     useEffect(() => {
         const queryParams = new URLSearchParams({

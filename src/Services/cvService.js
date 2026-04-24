@@ -1,7 +1,8 @@
 // src/services/cvService.js
 export const handleCVDownload = async () => {
+  const VITE_API_URL = import.meta.env.VITE_API_URL;
   try {
-    const response = await fetch('http://localhost:3001/api/cv/download');
+    const response = await fetch(`${VITE_API_URL}/api/cv/download`);
     const data = await response.json();
 
     if (data.url) {

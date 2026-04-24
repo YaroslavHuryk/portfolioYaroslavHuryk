@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'; 
 import Post from './Post';
-import VITE_API_URL from 'import.meta.env.NEXT_PUBLIC_API_URL';
+import VITE_API_URL from 'import.meta.env.VITE_API_URL';
 
 function Blog() {
     const [posts, setPosts] = React.useState([]);

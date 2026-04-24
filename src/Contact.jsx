@@ -1,4 +1,4 @@
-import VITE_API_URL from 'import.meta.env.NEXT_PUBLIC_API_URL';
+import VITE_API_URL from 'import.meta.env.VITE_API_URL';
 function Contact() {
     const handleSubmit = async (e) => { // 1. Змінили назву на 'e' (event)
         e.preventDefault(); // 2. Викликаємо preventDefault у об'єкта події

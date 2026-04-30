@@ -6,11 +6,11 @@ import { handleCVDownload} from './Services/cvService';
 function AboutScreen() {
   return (
     <div className="flex flex-col items-center justify-center h-auto w-full bg-gray-10">
-      <h2 className="text-2xl md:text-4xl font-bold text-opacity-90 text-white mb-6">About Me</h2>
+      <h2 className="text-2xl font-sans md:text-4xl font-bold text-opacity-90 text-white mb-6">About Me</h2>
       <div className='md:flex items-center'>
         <img  className="block h-auto md:w-2/5 rounded-full mb-8 md:mb-0 md:mr-24" src="/portret2.jpg" alt="My photo" />
         <div className='flex flex-col items-center'>
-          <p className="text-white md:text-xl text-opacity-50 text-justify text-base font- mb-6">Hi, I'm Yaroslav. I am a Software Engineer specializing in Front-End and Web Development, with a strong focus on the JavaScript ecosystem.
+          <p className="text-white md:text-xl text-opacity-50 text-justify text-base font-mono mb-6">Hi, I'm Yaroslav. I am a Software Engineer specializing in Front-End and Web Development, with a strong focus on the JavaScript ecosystem.
             <br />
             <br />
             My engineering journey is backed by a solid academic foundation in Software Engineering and hands-on experience in building scalable web applications. Currently, I am developing real-world projects (including freelance and NDA work), turning complex business logic into clean, maintainable code and intuitive user interfaces.

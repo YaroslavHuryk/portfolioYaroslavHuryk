@@ -4,6 +4,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import './index.css'
 import Header from './Header/Header.jsx';
 import Footer from './Footer.jsx';
+import Loader from './Loader.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,7 +16,7 @@ function App() {
   return (
     <div className='bg-[#121212] mt-[0px] pt-0 h-auto w-screen'>
       <BrowserRouter>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loader />}>
         <Header />
           <Routes>
               <Route path="/" element={<Home />} />

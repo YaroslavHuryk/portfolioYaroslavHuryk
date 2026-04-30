@@ -23,7 +23,7 @@ function GrayButton({ text, onClick }) {
   // }
 
   return (
-    <button className='bg-[#fd6e0000] border-2 pt-2 pb-2 pr-5 pl-5 lg:pt-3 lg:pb-3 lg:pr-10 lg:pl-10 border-gray-400 rounded-md font-semibold text-gray-400 md:text-xl hover:bg-gray-700' onClick={handleCVDownload}>
+    <button className='bg-[#fd6e0000] font-sans border-2 pt-2 pb-2 pr-5 pl-5 lg:pt-3 lg:pb-3 lg:pr-10 lg:pl-10 border-gray-400 rounded-md font-semibold text-gray-400 md:text-xl hover:bg-gray-700' onClick={handleCVDownload}>
       {text}
     </button>
   );

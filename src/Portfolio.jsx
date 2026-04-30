@@ -1,26 +1,36 @@
 import ProjectCard from "./ProjectCard";
 import { useEffect, useState } from "react";
+import Loader from "./Loader";
 
 function Portfolio(){
     const VITE_API_URL = import.meta.env.VITE_API_URL;
     const [projects, setProjects] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
 
 
     useEffect(() => {
         const queryParams = new URLSearchParams({
         type: "project"
         }).toString();
+        setIsLoading(true);
         fetch(`${VITE_API_URL}/api/announcements?${queryParams}`)
         .then(response => response.json())
         .then(data => {
             setProjects(data);
-        });
+            setIsLoading(false);
+        }).catch(err => {
+                console.error(err);
+                setIsLoading(false);
+            });
 
     }, []);
 
     return (
         <div className="pt-36 w-full md:p-20 md:pt-36 p-10">
-            <h1 className="pb-8 text-center font-bold text-4xl text-white">Portfolio</h1>
+            <h1 className="pb-8 font-sans text-center font-bold text-4xl text-white">Portfolio</h1>
+            {isLoading ? (
+                <Loader />
+            ) : (
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
                
                 {projects.map((project) => (
@@ -33,6 +43,7 @@ function Portfolio(){
                     />
                 ))}
             </div>
+            )}
         </div>
     )
 }

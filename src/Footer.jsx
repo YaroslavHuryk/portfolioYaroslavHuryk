@@ -10,10 +10,10 @@ function Footer(){
             <div className="w-3/4 lg:w-2/4 p-2 self-center flex justify-center">
                 <ListOfContacts />
             </div>
-            <div className="flex items-center gap-1 font-bold text-base"><img src="./mail.svg" alt="Email" /><p>yaroslavspace10@gmail.com</p></div>
-            <div className="flex items-center gap-1 font-bold text-base"><img src="./Vector.svg" alt="Phone" /><p>+380 670 77 44 25</p></div>
+            <div className="flex font-sans items-center gap-1 font-bold text-base"><img src="./mail.svg" alt="Email" /><p>yaroslavspace10@gmail.com</p></div>
+            <div className="flex font-sans items-center gap-1 font-bold text-base"><img src="./Vector.svg" alt="Phone" /><p>+380 670 77 44 25</p></div>
             <div className="bg-white bg-opacity-60 h-px w-4/5 my-2"></div>
-            <p className="text-white text-opacity-60 font-bold text-sm">Designed by @mahmood.fazile UI/UX designer</p>
+            <p className="text-white text-opacity-60 font-sans font-bold text-sm">Designed by @mahmood.fazile UI/UX designer</p>
         </div>
     )
 }
